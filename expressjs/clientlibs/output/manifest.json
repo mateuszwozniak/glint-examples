@@ -1,0 +1,18 @@
+{
+  "dev": {
+    "base": {
+      "css": [
+        "sources/css/base.css"
+      ],
+      "js": [
+        "sources/js/base.js"
+      ]
+    }
+  },
+  "prod": {
+    "base": {
+      "css": "build/css/base.58fbd63a0094e4bbc81d3d903273fea6.css",
+      "js": "build/js/base.4519ac43516c6965af0eb2a1c4df73d4.js"
+    }
+  }
+}

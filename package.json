@@ -1,0 +1,10 @@
+{
+    "name": "glint-examples",
+    "version": "0.0.1",
+    "author": "Mateusz Wozniak <mateusz@wozniak.io>",
+    "dependencies": {
+        "glint": "*",
+        "express": "*",
+        "jade": "*"
+    }
+}
