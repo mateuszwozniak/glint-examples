@@ -10,6 +10,7 @@ npm install
 - expressjs-jade-view - expressjs application with jade template
 
 To run any example you must:
+
 1. go to example directory:
 ```
 cd expressjs
