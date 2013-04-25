@@ -1,4 +1,4 @@
-#Examples for glint package for node
+#Examples for [glint](https://github.com/mateuszwozniak/glint) package for node
 
 Before you will run examples you must install dependencies via:
 ```javascript
