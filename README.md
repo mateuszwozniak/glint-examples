@@ -26,5 +26,7 @@ cd expressjs
 node server.js
 ```
 
-4. visit http://localhost:3000/ to see result
+4. visit http://localhost:3000/ to see result (checkout console to check if javascript files also were loaded)
+
+5. add ?debugGlintAssets=true to url (http://localhost:3000/?debugGlintAssets=true) to switch to dev mode - you will see that all files are now served separately.
 
