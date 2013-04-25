@@ -1,1 +1,0 @@
-alert('base.js loaded');

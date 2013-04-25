@@ -4,11 +4,20 @@ module.exports = {
     manifest: 'output/manifest.json',
     packages: [
         {
-            name: 'base',
-            final: true,
+            name: 'core-libs',
+            final: false,
             files: [
-                'base.css',
-                'base.js'
+                'core/core.css',
+                'core/core.js'
+            ]
+        },
+        {
+            name: 'app',
+            final: true,
+            require: ['core-libs'],
+            files: [
+                'app/app.css',
+                'app/app.js'
             ]
         }
     ]

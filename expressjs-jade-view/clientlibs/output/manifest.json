@@ -1,18 +1,20 @@
 {
   "dev": {
-    "base": {
+    "app": {
       "css": [
-        "sources/css/base.css"
+        "sources/css/core.css",
+        "sources/css/app.css"
       ],
       "js": [
-        "sources/js/base.js"
+        "sources/js/core.js",
+        "sources/js/app.js"
       ]
     }
   },
   "prod": {
-    "base": {
-      "css": "build/css/base.58fbd63a0094e4bbc81d3d903273fea6.css",
-      "js": "build/js/base.4519ac43516c6965af0eb2a1c4df73d4.js"
+    "app": {
+      "css": "build/css/app.4dd3c00db7fb2abe637978e73001ff10.css",
+      "js": "build/js/app.5afa378b7230621bd9b08cf40ddd2fae.js"
     }
   }
 }

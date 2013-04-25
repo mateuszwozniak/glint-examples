@@ -7,8 +7,10 @@ var glintForExpress = require('glint').adapters.express;
 var app = express();
 // set view engine to jade
 app.set('view engine', 'jade');
+
 // set static file serving
 app.use("/build", express.static(__dirname + '/clientlibs/output/build'));
+app.use("/sources", express.static(__dirname + '/clientlibs/output/sources'));
 
 // add glint to express application
 app.use(glintForExpress('clientlibs/output/manifest.json'));

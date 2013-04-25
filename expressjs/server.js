@@ -5,8 +5,11 @@ var glintForExpress = require('glint').adapters.express;
 
 // create express application
 var app = express();
+
 // set static file serving
 app.use("/build", express.static(__dirname + '/clientlibs/output/build'));
+app.use("/sources", express.static(__dirname + '/clientlibs/output/sources'));
+
 // add glint to express application
 app.use(glintForExpress('clientlibs/output/manifest.json'));
 
@@ -14,7 +17,16 @@ app.use(glintForExpress('clientlibs/output/manifest.json'));
 app.get('/', function (req, res) {
     // now you have assets variable in res.locals
     // you can access final packages via package_name.files_category
-    var body = '<html><head>' + res.locals.assets.base.css + '</head><body>' + res.locals.assets.base.js + '</body></html>';
+    var body = [
+        '<html>',
+            '<head>',
+                res.locals.assets.app.css,
+            '</head>',
+            '<body>',
+                '<h1>This text should be red and uppercase.</h1>',
+                res.locals.assets.app.js,
+            '</body>',
+        '</html>'].join('');
     res.end(body);
 });
 
